@@ -1,4 +1,4 @@
-module github.com/LucasCarioca/status-service
+module github.com/LucasCarioca/go-service
 
 go 1.14
 

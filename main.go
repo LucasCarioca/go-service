@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/LucasCarioca/status-service/pkg/routes"
+	"github.com/LucasCarioca/go-service/pkg/routes"
 )
 
 func main() {

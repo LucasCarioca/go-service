@@ -3,7 +3,7 @@ package routes
 import (
 	"net/http"
 
-	"github.com/LucasCarioca/status-service/pkg/services"
+	"github.com/LucasCarioca/go-service/pkg/services"
 	"github.com/gin-gonic/gin"
 )
 
