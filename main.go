@@ -9,7 +9,9 @@ import (
 
 func main() {
 	app := gin.Default()
+
 	routes.HealthRouter(app)
+	
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
