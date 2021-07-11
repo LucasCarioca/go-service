@@ -10,11 +10,12 @@ func get(context *gin.Context) {
 	message := "up"
 	hs := services.HealthService{}
 
-	pinetHub := hs.CheckStatus("http://192.168.1.150:30101/api/v1/health")
+	pinetHub := hs.CheckStatus("http://192.168.1.219/api/v1/health")
 	pinetNode01 := hs.CheckStatus("http://192.168.1.200:8000/api/v1/health")
 	pinetNode02 := hs.CheckStatus("http://192.168.1.201:8000/api/v1/health")
 	pinetNode03 := hs.CheckStatus("http://192.168.1.203:8000/api/v1/health")
 	pinetNode04 := hs.CheckStatus("http://192.168.1.202:8000/api/v1/health")
+	
 	list := [5]services.Status{
 		pinetHub, 
 		pinetNode01,
